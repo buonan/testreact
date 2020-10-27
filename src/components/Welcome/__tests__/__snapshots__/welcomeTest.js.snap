@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Component tests should match snapshot and styles for default props 1`] = `
+<Welcome>
+  <div>
+    <h1>
+      Hello, 
+    </h1>
+    <button
+      onClick={[Function]}
+    />
+  </div>
+</Welcome>
+`;

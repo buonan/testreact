@@ -1,0 +1,35 @@
+{
+  "name": "testreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config ./jest.config.json --debug --no-cache",
+    "cover": "jest --config ./jest.config.json --debug --no-cache --coverage",
+    "build": "rm -rf ./dist && ./node_modules/.bin/babel src --out-dir dist --ignore '**/__tests__'",
+    "debug": "npx babel-node --nolazy --inspect-brk=9229 ./src/index.js",
+    "start": "node --nolazy ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/polyfill": "^7.10.4",
+    "core-js": "^3.6.5",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.8.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.6.1",
+    "jest": "^26.2.2",
+    "react-dom": "^16.13.1"
+  }
+}

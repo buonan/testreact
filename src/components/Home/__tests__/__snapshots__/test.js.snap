@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home tests should match snapshot and styles for default props 1`] = `
+<Home
+  name="Bob"
+>
+  <div>
+    Bob
+  </div>
+</Home>
+`;
